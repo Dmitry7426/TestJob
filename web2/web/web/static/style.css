@@ -1,0 +1,67 @@
+p{
+    font-size: 28px;
+}
+
+body{
+    background-image: url('./background.jpg');
+    }
+
+form {
+    height: 450px;
+    width: 750px;
+    margin: 0 auto;
+    border: rgb(255, 203, 125, 0.8) 18px ridge;
+    background-color: rgb(255, 224, 229, 0.4);
+    border-radius: 5%;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-left: 0.4%;
+    padding-right: 0.4%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.send {
+    font-size: 20px;
+    background-color: rgb(210, 167, 250, 0.5);
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 200px;
+    border: rgb(95, 54, 0, 0.3) 3px solid;    
+    border-radius: 15px;
+    display: flex;
+    transition: background-color 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.send:hover{
+    background-color: rgba(132, 2, 253, 0.5);
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 200px;
+    border: rgb(95, 54, 0, 0.3) 3px solid;    
+    border-radius: 15px;
+    display: flex;    
+    transform: scale(1.1);
+}
+
+.form-group{
+    margin: 0 auto;
+    width: 600px;
+}
+
+label{
+    font-size: 20px;
+}
+
+#id_name, #id_registration_number{
+    background-color: gainsboro;
+    border-radius: 8px;
+    width: 98%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 1%;
+    font-size: 20px;
+}

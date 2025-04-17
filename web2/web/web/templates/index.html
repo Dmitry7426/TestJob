@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="./static/style.css" rel="stylesheet" type="text/css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <form method="POST" id="MyForm" >
+        {% csrf_token %}
+        <div>
+           {% for field in form %}
+             {% if field.help_text %}
+        <a class="help">{{ field.help_text|safe }}</a>
+            {% endif %}
+                <div>
+                    {{field.label_tag}}
+                    <div>{{field}}</div>
+                    <div class="error">{{field.errors}}</div>
+                </div>
+            {% endfor %}
+        </div>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Send" class="send" id="send">
+    </form>
+</body>
+</html>
